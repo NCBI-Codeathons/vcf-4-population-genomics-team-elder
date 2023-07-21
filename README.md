@@ -1,7 +1,7 @@
 # Team Project Name
 
 List of participants and affiliations:
-- Participant, Affiliation (Team Leader)
+- Jesse Elder, California Department of Public Health (Team Leader)
 - Participant, Affiliation
 
 ## Project Goals
