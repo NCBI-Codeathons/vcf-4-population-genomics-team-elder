@@ -2,7 +2,8 @@
 
 List of participants and affiliations:
 - Jesse Elder, California Department of Public Health (Team Leader)
-- Participant, Affiliation
+- Participant
+-    Indresh Singh, Affiliation
 
 ## Project Goals
 
