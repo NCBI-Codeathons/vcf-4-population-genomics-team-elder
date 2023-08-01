@@ -15,8 +15,13 @@ The goal of this project is to compare SARS-CoV-2 Intra-host allele frequencies 
 
 File Descriptions:
 CovidEras.xlsv: Time periods are selected from CoVariants.org where the dominant lineage is 46%-845 prevalent in the USA.
+
 Minor_Allele_Query.sql: The SQL code queries the minor alleles in the SARS-CoV-2 VCF files. Using Amazon Athena, the data source used was AwsDataCatolog and the database was ncbi-vcf-codeathon-rc-db1. Metrics used is less than .5 frequency and greater than or equal to 20 reads.
 
 ## Results
+•     Started 194464510   QC, query, run   ended today 5006156 variants
+•     Minor allele frequency rate of occurrence- maybe to predict the next occurrences
+•     Minor allele reference code for read filtering, mapping and analysisgithub.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
+•     Limitations-recurrent sequencing errors, independent mutations multiple times
 
 ## Future Work
