@@ -18,6 +18,9 @@ CovidEras.xlsv: Time periods are selected from CoVariants.org where the dominant
 
 Minor_Allele_Query.sql: The SQL code queries the minor alleles in the SARS-CoV-2 VCF files. Using Amazon Athena, the data source used was AwsDataCatolog and the database was ncbi-vcf-codeathon-rc-db1. Metrics used is less than .5 frequency and greater than or equal to 20 reads.
 
+BQ.1Wave_VCF.sql: This SQL code merges the complete VCF file with a subset of the metadata so that only the VCF data between Nov 21, 2022 - Jan 16, 2023 are included. Other queries will take subsets for the other eras of dominant lineages.
+
+
 ## Results
 •     Started 194464510   QC, query, run   ended today 5006156 variants
 •     Minor allele frequency rate of occurrence- maybe to predict the next occurrences
