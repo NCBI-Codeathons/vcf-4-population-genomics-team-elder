@@ -122,3 +122,35 @@ ax.set_ylabel("Normalized hit rate")
 
 fig.savefig("allele_lollypop.pdf")
 ```
+
+## Plotting function
+
+```python
+def plot_hit_locations(input_df, add_points=True, group_color=None, ax=None):
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(14.4, 4.8))
+    
+    ax.bar(input_df["pos"], input_df["normalized_rate"], width=51, color=group_color, alpha=0.3)
+    
+    if add_points:
+        ax.scatter(input_df["pos"], input_df["normalized_rate"], s=10, color=group_color, alpha=0.3)
+    
+    ax.set_yscale("log")
+    ax.set_yticks(
+        [0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1],
+        ["0.5%", "1%", "2%", "5%", "10%", "20%", "50%", "100%"]
+    )
+    
+    ax.set_xlabel("SARS-CoV2 genomic position")
+    ax.set_ylabel("Normalized hit rate")
+
+    return ax
+
+out_ax = plot_hit_locations(plot_df.loc[plot_df["normalized_rate"] > 0.05])
+out_ax.set_yticks(
+    [0.05, 0.1, 0.2, 0.5, 1],
+    ["5%", "10%", "20%", "50%", "100%"]
+)
+out_ax.axhline(0.05, linestyle="dotted", color="red")
+out_ax.get_figure().savefig("allele_lollypop.pdf")
+```
