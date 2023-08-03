@@ -30,28 +30,34 @@ msft.head()
 ## Reshape data
 
 ```python
-plot_df = (
-msft
- .assign(Num = 1)
- .loc[:,["pos", "Num"]]
- .groupby("pos")
- .sum()
- .reset_index()
-)
+# This is expected to be a bottleneck when it comes to scaling up; consider alternatives to Pandas
 
-plot_df["normalized"] = plot_df["Num"] / msft["run"].nunique()
-plot_df["pos"] = pd.to_numeric(plot_df["pos"])
-plot_df = plot_df.sort_values("pos")
+N_runs = msft["run"].nunique()
+plot_df = (
+    msft
+    .assign(Affected_samples = 1)
+    .loc[:,["pos", "Affected_samples"]]
+    .groupby("pos")
+    .sum()
+    .reset_index()
+    .assign(
+        normalized_rate = lambda x: x["Affected_samples"] / N_runs,
+        pos = lambda x: pd.to_numeric(x["pos"])
+    )
+    .sort_values("pos")
+)
 
 plot_df.head()
 ```
+
+## Verify that reshaping went as expected
 
 ```python
 msft[msft["pos"] == 44]
 ```
 
 ```python
-msft[msft["pos"] == 241].shape
+assert msft[msft["pos"] == 241].shape[0] == plot_df.loc[plot_df["pos"] == 241, "Affected_samples"].tolist()[0], "Number of alleles seen at position 241 is not equal to what we see in the summary"
 ```
 
 ```python
@@ -63,11 +69,7 @@ msft["run"].unique().shape
 ```python
 fig = plt.figure(figsize=(14.4, 3.6))
 ax = fig.add_subplot()
-ax.bar(plot_df["pos"], plot_df["normalized"])
-```
-
-```python
-plot_df["pos"]
+ax.bar(plot_df["pos"], plot_df["normalized_rate"])
 ```
 
 ```python
