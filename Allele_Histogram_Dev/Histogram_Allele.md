@@ -20,6 +20,7 @@ jupyter:
 ```python
 import pandas as pd
 from matplotlib import pyplot as plt
+from matplotlib import ticker as tck
 ```
 
 ```python
@@ -70,8 +71,10 @@ msft["run"].unique().shape
 fig = plt.figure(figsize=(14.4, 3.6))
 ax = fig.add_subplot()
 ax.bar(plot_df["pos"], plot_df["normalized_rate"])
-```
-
-```python
-
+ax.set_yscale("log")
+ax.set_yticks([0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1])
+# ax.yaxis.set_major_formatter(tck.ScalarFormatter())
+ax.yaxis.set_major_formatter(tck.FormatStrFormatter("%.3f"))
+ax.set_xlabel("SARS-CoV2 genomic position")
+ax.set_ylabel("Normalized hit rate")
 ```
