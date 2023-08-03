@@ -127,6 +127,18 @@ fig.savefig("allele_lollypop.pdf")
 
 ```python
 def plot_hit_locations(input_df, add_points=True, group_color=None, ax=None):
+    '''
+    Creates a plot showing the portion of samples bearing a minor allele at each positions on th SARS-CoV2 virus reference genome.
+
+    Parameters:
+        input_df (pd.DataFrame): The preformatted table, having a `pos` and a `normalized_rate` column.
+        add_points (bool): Logical, specifying if the scatterplot should be added over the bars, creating a lollypop.
+        group_color (str): If not `None`, this will be the color of both bars and dots.
+        ax (matplotlib.axes): A predefined axis (subplot) to use for plotting.
+
+    Returns:
+        A `matplotlib` axis instance.   
+    '''
     if ax is None:
         fig, ax = plt.subplots(figsize=(14.4, 4.8))
     
