@@ -19,6 +19,7 @@ jupyter:
 
 ```python
 import pandas as pd
+import seaborn as sns
 from matplotlib import pyplot as plt
 from matplotlib import ticker as tck
 ```
@@ -63,6 +64,24 @@ assert msft[msft["pos"] == 241].shape[0] == plot_df.loc[plot_df["pos"] == 241, "
 
 ```python
 msft["run"].unique().shape
+```
+
+## Value range
+
+```python
+sns.kdeplot(plot_df["normalized_rate"])
+```
+
+```python
+plot_df["normalized_rate"].min()
+```
+
+```python
+plot_df.loc[plot_df["normalized_rate"] > 0.2]
+```
+
+```python
+plot_df.loc[plot_df["normalized_rate"] > 0.5]
 ```
 
 ## Basic histogram
