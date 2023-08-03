@@ -89,7 +89,7 @@ plot_df.loc[plot_df["normalized_rate"] > 0.5]
 ```python
 fig = plt.figure(figsize=(14.4, 4.8))
 ax = fig.add_subplot()
-ax.bar(plot_df["pos"], plot_df["normalized_rate"], color="red")
+ax.bar(plot_df["pos"], plot_df["normalized_rate"], width=11, color="red", alpha=0.6)
 ax.set_yscale("log")
 ax.set_yticks(
     [0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1],
