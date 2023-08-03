@@ -1,0 +1,5 @@
+# Do not track notebook outputs
+*.ipynb
+
+# Jupyter has the habit of creating redundant checkpoints (autosave)
+**/*.ipynb_checkpoints/
