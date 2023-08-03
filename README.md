@@ -8,17 +8,19 @@ List of participants and affiliations:
 - Ruvarashe Madzime, Stellenbosch University
 - Tamas Szabo, 
 ## Project Goals
-The goal of this project is to analyze SARS-CoV-2 intra-host mutations in public SRA data to analyze minor alleles not identified in consensus fasta files. In addition to evaluating minor allele frequencies throughout the pandemic, we also aim to compare minor allele frequencies across waves of the pandemic. Previously identified mutations from long-term SARS-CoV-2 infections Variant of Concern (VOC) mutations will be used as a guideline to identify mutation trends. This will give an underlying understanding of mutations developing during and before a major SARS-CoV-2 lineage takes over (i.e.. BA.5, XBB.1.5). Mutation patterns identified may enable machine learning to be applied to identify future VOCs. Specifically we are interested in knowing which major lineage-defining mutations appear as minor alleles prior to the lineages becoming dominant.
+The goal of this project is to analyze SARS-CoV-2 intra-host mutations in public SRA data to analyze minor alleles not identified in consensus fasta files. In addition to evaluating minor allele frequencies throughout the pandemic, we also aim to compare minor allele frequencies within specific waves of the pandemic. Previously identified mutations from Variant of Concern (VOC) as well long-term SARS-CoV-2 infections will be used as a guideline to identify mutation trends. This will give an underlying understanding of mutations developing during and before a major SARS-CoV-2 lineage takes over (i.e.. BA.5, XBB.1.5). Mutation patterns identified may enable machine learning to be applied to identify future VOCs. 
 
 ## Approach
   ![Workflow](VCFCodeathon.png)
 
 File Descriptions:
-CovidEras.xlsv: Time periods are selected from CoVariants.org where the dominant lineage is 46%-845 prevalent in the USA.
+### Context_Data Directory: 
+- CovidEras.csv: A file providing date ranges during which certain lineages were dominant. Times periods are determined based on CoVariants website when each lineage accounts for >50% of all sequences.
+- Gene_Positions.csv: A file providing nucleotide positions of genes in the SARS-CoV-2 genome.
+- Lineage_Def_Mutations.csv: A file containting the mutations associated with each dominant lineage throughout the pandemic. Only includes mutations on top of previous dominant lineages (e.g. BA.1>B.1.617.2)
 
-Minor_Allele_Query.sql: The SQL code queries the minor alleles in the SARS-CoV-2 VCF files. Using Amazon Athena, the data source used was AwsDataCatolog and the database was ncbi-vcf-codeathon-rc-db1. Metrics used is less than .5 frequency and greater than or equal to 20 reads.
-
-BQ.1Wave_VCF.sql: This SQL code merges the complete VCF file with a subset of the metadata so that only the VCF data between Nov 21, 2022 - Jan 16, 2023 are included. Other queries will take subsets for the other eras of dominant lineages.
+### Covid_Wave_Code Directory:
+- Code generating aggregated minor allele frequency data and mutation frequency data within the population. Each dominant lineage wave is given its own code directory.
 
 
 ## Results
