@@ -19,9 +19,9 @@ Input data for the histogram dipecting minor allele frequencies per genome posit
 
 _Context_Data Directory:_
 Files include lineage defining mutations, Covid-19 major lineage time periods, and gene positions.
--- CovidEras.csv: A file providing date ranges during which certain lineages were dominant. Times periods are determined based on CoVariants website when each lineage accounts for >50% of all sequences.
--- Gene_Positions.csv: A file providing nucleotide positions of genes in the SARS-CoV-2 genome.
--- Lineage_Def_Mutations.csv: A file containting the mutations associated with each dominant lineage throughout the pandemic. Only includes mutations on top of previous dominant lineages (e.g. BA.1>B.1.617.2)
+- CovidEras.csv: A file providing date ranges during which certain lineages were dominant. Times periods are determined based on CoVariants website when each lineage accounts for >50% of all sequences.
+- Gene_Positions.csv: A file providing nucleotide positions of genes in the SARS-CoV-2 genome.
+- Lineage_Def_Mutations.csv: A file containting the mutations associated with each dominant lineage throughout the pandemic. Only includes mutations on top of previous dominant lineages (e.g. BA.1>B.1.617.2)
 
 _Covid_Wave_Code Directory:_
 - Code generating aggregated minor allele frequency data and mutation frequency data within the population. Each dominant lineage wave is given its own code directory.
@@ -33,11 +33,11 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
 
 ## Results
  ![Workflow](Hist_maf_SARS-CoV-2_Lineage.png)
--Started 194464510   QC, query, run   ended today 5006156 variants
--Minor allele frequency rate of occurrence- potential to predict the next occurrences
-- Minor allele reference code for read filtering, mapping and analysis github.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
--Limitations-recurrent sequencing errors, independent mutations multiple times
+- Started 194464510   QC, query, run   ended today 5006156 variants
+- Minor allele frequency rate of occurrence- potential to predict the next occurrences
+- Minor allele reference code for read filtering, mapping and analysis github.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
+- Limitations-recurrent sequencing errors, independent mutations multiple times
 
 ## Future Work
--Incorporate known SARS-CoV-2 long-term infection mutations
--incorporate machine learning to predict future variants of concern
+- Incorporate known SARS-CoV-2 long-term infection mutations
+- incorporate machine learning to predict future variants of concern
