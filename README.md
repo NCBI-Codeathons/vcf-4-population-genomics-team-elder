@@ -11,7 +11,7 @@ List of participants and affiliations:
 The goal of this project is to analyze SARS-CoV-2 intra-host mutations in public SRA data to analyze minor alleles not identified in consensus fasta files. In addition to evaluating minor allele frequencies throughout the pandemic, we also aim to compare minor allele frequencies within specific waves of the pandemic. Previously identified mutations from Variant of Concern (VOC) as well long-term SARS-CoV-2 infections will be used as a guideline to identify mutation trends. This will give an underlying understanding of mutations developing during and before a major SARS-CoV-2 lineage takes over (i.e.. BA.5, XBB.1.5). Mutation patterns identified may enable machine learning to be applied to identify future VOCs. 
 
 ## Approach
-  ![Workflow](VCFCodeathon.png)
+  ![Workflow](VCFCodeathon_Workflow.png)
 
 ## File Descriptions:
 _Aggregate_Mean Directory:_
