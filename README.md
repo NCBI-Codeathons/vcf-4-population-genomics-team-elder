@@ -26,6 +26,10 @@ Files include lineage defining mutations, Covid-19 major lineage time periods, a
 ### Covid_Wave_Code Directory:
 - Code generating aggregated minor allele frequency data and mutation frequency data within the population. Each dominant lineage wave is given its own code directory.
 
+MAF_Predictors.pptx: Presentation Slides for the Codethon Final Presentations
+
+LineageTrends_withMinorAlleles.xlsx: Includes Population Frequency of Minor Alleles per SARS-CoV-2 Nucleotide Position for Variants of Concern (pink highlight is pop_freq>1%). Table annotates three or more SARS-CoV-2 VOC lineages with all greater than 1% population frequency  with relevant mutations at same position. 
+
 
 ## Results
  ![Workflow](Hist_maf_SARS-CoV-2_Lineage.png)
