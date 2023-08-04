@@ -38,6 +38,19 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
 - Minor allele reference code for read filtering, mapping and analysis github.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
 - Limitations-recurrent sequencing errors, independent mutations multiple times
 
+## Conclusions
+- Covid pandemic characterized by waves of new lineages taking over
+- Population-scale intra-host diversity data is under-studied
+  - Rich data not captured by consensus genome analyses
+- Spike and N gene mutations are common recurrent minor alleles
+  - More diverse mutations after S gene post-BA.1 wave
+  - Gives insight to gene regions outside of S-gene to look into for immune escape
+- Lineage-defining mutations do recur in population prior to lineage dominance
+  - Not clear if more frequent than other minor alleles
+  - Statistical testing needed to know if population frequency elevated
+![image](https://github.com/NCBI-Codeathons/vcf-4-population-genomics-team-elder/assets/49538300/123d58c9-0f5b-4355-b762-d763147ad8bc)
+
+
 ## Future Work
 - Incorporate known SARS-CoV-2 long-term infection mutations
 - incorporate machine learning to predict future variants of concern
