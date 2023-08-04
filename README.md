@@ -37,7 +37,7 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
   **Figure 2:** A kernel density plot comparing the frequency at which minor alleles across the SARS-CoV-2 genome appear within the population. It also compares this population frequency between the different waves of dominant covid lineages. The majority of minor alleles occur in __<0.01%__ of sequences, and there are no major differences in frequency between the different waves.
 ### Histogram of Population Frequency of SARS-CoV-2 Minor Alleles in Dominant Lineage Eras
   ![MAF Genome Histogram](Hist_maf_SARS-CoV-2_Lineage.png)
-  **Figure 3:** Histogram compares population frequency of SARS-CoV-2 minor alleles (y-axis) over SARS-CoV-2 genome position (x-axis). Histograms are stacked from the first major lineage era of Pre-Alph to the latest wave of Omicron sublineage XBB.1.5. Dots on tip of lines depict lineage defining mutations of the upcoming dominant lineage. For example, BQ.1 points have the XBB.1.5 lineage-defining mutations. 
+  **Figure 3:** Histogram compares population frequency of SARS-CoV-2 minor alleles (y-axis) over SARS-CoV-2 genome position (x-axis). Histograms are stacked from the first major lineage era of Pre-Alpha to the latest wave of Omicron sublineage XBB.1.5. Dots on tip of lines depict lineage defining mutations of the upcoming dominant lineage. For example, BQ.1 points have the XBB.1.5 lineage-defining mutations. 
 - ORF1ab positions are relatively stable and have fewer mutations
 - Clear bump in frequency around Spike gene, specifically the RBD
 - Non-spoike gene mutations are more common post BA.1
