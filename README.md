@@ -14,10 +14,11 @@ The goal of this project is to analyze SARS-CoV-2 intra-host mutations in public
   ![Workflow](VCFCodeathon.png)
 
 File Descriptions:
+## Aggregate_Mean Directory:
+Input data for the histogram dipecting minor allele frequencies per genome positions
+
 ## Context_Data Directory: 
--Aggregate Mean Folder: Input data for the histogram dipecting minor allele frequencies per genome positions
--Allele Histogram Folder: Histogram attempts
--Context Data Folder: Files include lineage defining mutations, Covid-19 major lineage time periods, and gene positions.
+Files include lineage defining mutations, Covid-19 major lineage time periods, and gene positions.
 -- CovidEras.csv: A file providing date ranges during which certain lineages were dominant. Times periods are determined based on CoVariants website when each lineage accounts for >50% of all sequences.
 -- Gene_Positions.csv: A file providing nucleotide positions of genes in the SARS-CoV-2 genome.
 -- Lineage_Def_Mutations.csv: A file containting the mutations associated with each dominant lineage throughout the pandemic. Only includes mutations on top of previous dominant lineages (e.g. BA.1>B.1.617.2)
