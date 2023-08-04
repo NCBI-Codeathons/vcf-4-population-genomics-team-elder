@@ -48,9 +48,12 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
 - Lineage-defining mutations do recur in population prior to lineage dominance
   - Not clear if more frequent than other minor alleles
   - Statistical testing needed to know if population frequency elevated
-![image](https://github.com/NCBI-Codeathons/vcf-4-population-genomics-team-elder/assets/49538300/123d58c9-0f5b-4355-b762-d763147ad8bc)
-
 
 ## Future Work
-- Incorporate known SARS-CoV-2 long-term infection mutations
-- incorporate machine learning to predict future variants of concern
+- Machine Learning & Algorithms for predicting future mutations in dominant lineages
+- Hotspots-Genes mutated more frequently than would be in the absence of selection
+- Apply additional genomic context to evaluate evolutionary selection pressures
+  - Known long-term infection mutations
+  - Paxlovis-resistance mutations
+
+
