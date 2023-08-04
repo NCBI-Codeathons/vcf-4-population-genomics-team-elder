@@ -32,8 +32,10 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
 
 
 ## Results
+Density Plot of Minor Alleles Presence in the Population
+  ![Kernel Density Plot](waves_kdeplot.png)
 Histogram of Population Frequency of SARS-CoV-2 Minor Alleles of Dominant Lineage Eras over SARS-CoV-2 Genome Position
- ![Workflow](Hist_maf_SARS-CoV-2_Lineage.png)
+  ![MAF Genome Histogram](Hist_maf_SARS-CoV-2_Lineage.png)
 - Started 194464510   QC, query, run   ended today 5006156 variants
 - Minor allele frequency rate of occurrence- potential to predict the next occurrences
 - Minor allele reference code for read filtering, mapping and analysis github.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
