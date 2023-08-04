@@ -37,10 +37,18 @@ _LineageTrends_withMinorAlleles.xlsx:_ Includes Population Frequency of Minor Al
   **Figure 2:** A kernel density plot comparing the frequency at which minor alleles across the SARS-CoV-2 genome appear within the population. It also compares this population frequency between the different waves of dominant covid lineages. The majority of minor alleles occur in __<0.01%__ of sequences, and there are no major differences in frequency between the different waves.
 ### Histogram of Population Frequency of SARS-CoV-2 Minor Alleles of Dominant Lineage Eras over SARS-CoV-2 Genome Position
   ![MAF Genome Histogram](Hist_maf_SARS-CoV-2_Lineage.png)
-- Started 194464510   QC, query, run   ended today 5006156 variants
-- Minor allele frequency rate of occurrence- potential to predict the next occurrences
-- Minor allele reference code for read filtering, mapping and analysis github.com/neherlab/EV-D68_analysis_Dyrdak_2019github.com/neherlab/SVVC
-- Limitations-recurrent sequencing errors, independent mutations multiple times
+- ORF1ab positions are relatively stable and have fewer mutations
+- Clear bump in frequency around Spike gene, specifically the RBD
+- Non-spoike gene mutations are more common post BA.1
+- Pre-Alpha to Delta in Position 25,202: S:W1214R is a homoplasic mutation in Beta and Gama variants known to destabilize proteins
+- Pre-Alpha to Delta in Position 26,714/5: M:C65_Frameshift; unclear, could be error as it disrupts the M gene and is detrimental
+- Delta Position 21,987: S:G142D, Omicron-defining mutation, known for immune evasion
+- BQ.1 Position 23,055 & 26,270: S:Q498R & E:T9I are characteristic mutations of BA.1 and consensus in BQ.1 although appearing as a minor allele here
+- BA.2.12.1 & BA.5 Postion 22,789: S:R408S is a BA.2 defining mutation
+    - More on this mutation here: https://twitter.com/jbloom_lab/status/1684649571086131200
+- Trends between lineages in file, _LineageTrends_withMinorAlleles.xlsx_, identifies multiple lineages with the same minor alleles greater than 1%
+    - Known immune escape regions from the Bloom Lab Calculator were identified
+    - Regions outside of the S gene may warrant investigation for immune escape function
 
 ## Conclusions
 - Covid pandemic characterized by waves of new lineages taking over
